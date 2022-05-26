@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "gfwc.ed@gmail.com"
           git config --global user.name "Pandaver"
           git add .
-          git commit -m "daily update" -a
+          git commit --allow-empty -m "daily update" -a
 
       - name: Push changes
         uses: ad-m/github-push-action@master
