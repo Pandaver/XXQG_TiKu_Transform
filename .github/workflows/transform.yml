@@ -2,7 +2,8 @@ name: XXQG_TiKu_Transform
 
 on:
   schedule:
-    - cron: '18 1 * * *'
+    - cron: '0 22 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
