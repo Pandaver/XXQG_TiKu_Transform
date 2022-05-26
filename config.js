@@ -1,3 +1,7 @@
 module.exports = {
-  githubRawProxy: 'https://raw.gh.fakev.cn/'
+  /**
+   * proxy
+   * https://raw.gh.fakev.cn/
+   */
+  githubRawProxy: 'https://raw.githubusercontent.com/'
 }
