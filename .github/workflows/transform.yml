@@ -1,0 +1,32 @@
+name: XXQG_TiKu_Transform
+
+on:
+  schedule:
+    - cron: '18 1 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Run transform
+        run: |
+          node ./index.js
+
+      - name: Commit files
+        run: |
+          git config --global user.email "gfwc.ed@gmail.com"
+          git config --global user.name "Pandaver"
+          git add .
+          git commit -m "daily update" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
