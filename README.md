@@ -23,7 +23,16 @@
 </p>
 
 # 直链地址
-哪个能访问用哪个
+### 哪个能访问用哪个
+
+自定义每日每周专项题库地址
+```
+https://raw.gh.fakev.cn/Pandaver/XXQG_TiKu_Transform/main/QuestionBank.db
+
+https://raw.0z.gs/Pandaver/XXQG_TiKu_Transform/main/QuestionBank.db
+```
+
+自定义题库四人/双人/挑战地址
 ```
 https://raw.gh.fakev.cn/Pandaver/XXQG_TiKu_Transform/main/question
 
