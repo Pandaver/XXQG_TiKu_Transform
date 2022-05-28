@@ -61,11 +61,14 @@ exports.objToTwJson = obj => {
   for (let i = 0; i < obj.answers.length; i++) {
     q += `${obj.answers[i].value}`
   }
-  q += ` ${obj.title}`
-  for (let j = 0; j < obj.options.length; j++) {
-    const option = obj.options[j]
-    q += ' ' + option.text
+  q += ` ${obj.title.replace(/ /g,'')}`
+  // q += ` ${obj.title.split(' ').join('')}`
+  const title_prefix = obj.title.slice(0, 4)
+  const option_text = obj.options.map(o => o.text)
+  if (title_prefix === '选择词语' || title_prefix === '选择正确') {
+    q += '，' + option_text.join('，') + '。'
   }
+  q += ' ' + option_text.join('\t')
   return q
 }
 
