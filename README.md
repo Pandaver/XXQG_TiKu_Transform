@@ -26,12 +26,12 @@
 
 自定义每日每周专项题库地址
 ```
-https://cdn.jsdelivr.net/gh/Pandaver/XXQG_TiKu_Transform@main/QuestionBank.db
+https://ghproxy.com/https://raw.githubusercontent.com/Pandaver/XXQG_TiKu_Transform/main/QuestionBank.db
 ```
 
 自定义题库四人/双人/挑战地址
 ```
-https://cdn.jsdelivr.net/gh/Pandaver/XXQG_TiKu_Transform@main/question
+https://ghproxy.com/https://raw.githubusercontent.com/Pandaver/XXQG_TiKu_Transform/main/question
 ```
 
 # 更新时间
